@@ -4,7 +4,6 @@ import HttpApi from 'i18next-http-backend';
 
 import translationEN from "@src/locales/en/translation.json";
 import translationRU from "@src/locales/ru/translation.json";
-import translationTJ from "@src/locales/tj/translation.json";
 
 const resources = {
     en: {
@@ -12,9 +11,6 @@ const resources = {
     },
     ru: {
       translation: translationRU,
-    },
-    tj: {
-      translation: translationTJ,
     }
 };
 
