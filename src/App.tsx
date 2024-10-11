@@ -10,9 +10,11 @@ const RouterRoutes = () => (
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <RouterRoutes />
-    </BrowserRouter>
+    <div className="wrapper">
+      <BrowserRouter>
+        <RouterRoutes />
+      </BrowserRouter>
+    </div>
   )
 }
 

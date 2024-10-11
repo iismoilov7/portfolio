@@ -1,3 +1,7 @@
 {
-    "name": "Ismoil"
+    "name": "Ismoil",
+    "nav_home": "home",
+    "nav_projects": "projects",
+    "nav_about": "about-me",
+    "nav_contacts": "contacts"
 }

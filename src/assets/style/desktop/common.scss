@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     transition: 0.3s all;
+    color: $white;
 }
 
 body {
@@ -12,6 +15,26 @@ body {
     flex-direction: column;
     min-height: 100vh;
     font-family: sans-serif;
+    background-color: $background;
+    font-family: "Fira Code", monospace;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
     overflow-x: hidden;
-    color: #ffffff;
+    flex-direction: column;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+button {
+    background: none;
+    border: none;
 }

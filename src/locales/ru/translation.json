@@ -1,3 +1,7 @@
 {
-    "name": "Исмаил"
+    "name": "Исмаил",
+    "nav_home": "главная",
+    "nav_projects": "проекты",
+    "nav_about": "обо мне",
+    "nav_contacts": "контакты"
 }

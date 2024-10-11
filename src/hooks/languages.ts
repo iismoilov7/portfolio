@@ -17,8 +17,16 @@ const resources = {
 
 i18next.use(HttpApi).use(LanguageDetector).init({
     debug: true,
+    supportedLngs: ['en', 'ru'],
     resources: resources,
-    fallbackLng: "en"
+    fallbackLng: "en",    
 })
 
-export default i18next;
+const i18 = i18next;
+
+const changeLanguage = (lang: string) => {
+  i18.changeLanguage(lang);
+  window.location.reload();
+}
+
+export { i18, changeLanguage };
