@@ -6,9 +6,10 @@
     box-sizing: border-box;
     transition: 0.3s all;
     color: $white;
+    -webkit-tap-highlight-color: transparent; 
 }
 
-body {
+#root, body {
     margin: 0;
     padding: 0;
     display: flex;
@@ -27,14 +28,49 @@ body {
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
+    margin-top: 80px;
+    padding: 0 100px;
 }
 
 a {
     text-decoration: none;
     color: initial;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.5;
+    }
 }
 
 button {
     background: none;
     border: none;
+}
+
+
+
+.social-fixed {
+    position: fixed;
+    top: 0;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    z-index: 10;
+
+    &__line {
+        background-color: $white;
+        width: 1px;
+        height: 100px;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
 }

@@ -2,6 +2,7 @@
     "name": "Ismoil",
     "nav_home": "home",
     "nav_projects": "projects",
+    "nav_blog": "blog",
     "nav_about": "about-me",
     "nav_contacts": "contacts"
 }

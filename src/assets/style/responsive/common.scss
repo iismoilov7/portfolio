@@ -1,0 +1,21 @@
+@include _1440 {
+    .wrapper {
+        padding: 0 100px;
+    }
+}
+
+@include _1024 {
+    .wrapper {
+        padding: 0 50px;
+    }
+
+    .social-fixed {
+        display: none;
+    }
+}
+
+@include _768 {
+    .wrapper {
+        padding: 0;
+    }
+}

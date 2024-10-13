@@ -4,37 +4,27 @@ import { Link } from "react-router-dom";
 import animate from "@src/utils/animation";
 import { i18, changeLanguage } from "@src/hooks/languages";
 
-const navLinks = [
-    {
-        key: 1,
-        title: i18.t("nav_home"),
-        href: "/",
-    },
-    {
-        key: 2,
-        title: i18.t("nav_projects"),
-        href: "/projects",
-    },
-    {
-        key: 3,
-        title: i18.t("nav_about"),
-        href: "/about",
-    },
-    {
-        key: 4,
-        title: i18.t("nav_contacts"),
-        href: "/contacts",
-    },
-];
 
-const Header: React.FC = () => {
-    const [isActive, setActive] = useState(false);
+interface HeaderProps {
+    navLinks: {
+        id: number;
+        title: string;
+        href: string;
+    }[];
+}
+
+
+const Header: React.FC<HeaderProps> = ({ navLinks }) => {
+    const [isHovered, setHovered] = useState(false);
+    const [isOpen, setOpen] = useState(false);
     const languageList = useRef<HTMLDivElement | null>(null); 
+    const headerTag = useRef<HTMLHeadElement | null>(null);
+    const navTag = useRef<HTMLHeadElement | null>(null);
     const allLanguages = Object.keys(i18.services.resourceStore.data).filter(lang => lang !== i18.language);
 
 
     const handleMouseEnter = () => {
-        setActive(true);
+        setHovered(true);
         if (languageList.current) {
             animate(languageList.current, {
                 display: "flex",
@@ -45,7 +35,7 @@ const Header: React.FC = () => {
     };
 
     const handleMouseLeave = () => {
-        setActive(false);
+        setHovered(false);
         if (languageList.current) { // Check if the ref is not null
             animate(languageList.current, {
                 animation: "animate__flipOutX",
@@ -54,15 +44,38 @@ const Header: React.FC = () => {
         }
     };
 
+    const handleClick = async () => {
+        if (isOpen) {
+            if (headerTag.current && navTag.current) {
+                await animate(navTag.current, {
+                    animation: "animate__fadeOut",
+                    is_show: true,
+                });
+                headerTag.current.classList.remove("active");
+            };
+            
+            setOpen(false);
+        } else {
+            if (headerTag.current && navTag.current) {
+                headerTag.current.classList.add("active");
+                await animate(navTag.current, {
+                    animation: "animate__fadeIn",
+                    is_show: true
+                });
+            }
+            setOpen(true);
+        }
+    }
+
 
     return (
-        <header className="header">
+        <header className="header animate__animated" ref={headerTag}>
             <div className="header__brand">Ismoil</div>
             
-            <nav className="header__nav">
+            <nav className="header__nav animate__animated" ref={navTag}>
                 {
                     navLinks.map((link) => (
-                        <Link key={link.key} to={link.href} className="header__nav-link">
+                        <Link key={link.id} to={link.href} className="header__nav-link">
                             <span>#</span>
                             {link.title}
                         </Link>
@@ -70,7 +83,8 @@ const Header: React.FC = () => {
                 }
             </nav>
 
-            <div className={`header__lang ${isActive ? 'active' : ''}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            
+            <div className={`header__lang ${isHovered ? 'active' : ''}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                 <span className="header__lang-current">{i18.language}</span>
                 
                 <div className="header__lang-list animate__animated" ref={languageList}>
@@ -80,7 +94,9 @@ const Header: React.FC = () => {
                         ))
                     }
                 </div>
+            </div>
 
+            <div className="header__burger" onClick={handleClick}>
             </div>
             
         </header>

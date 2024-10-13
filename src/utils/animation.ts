@@ -6,8 +6,8 @@ interface AnimateOptions {
     is_show: boolean;
 }
 
-const animate = (element: HTMLElement, options: AnimateOptions) => {
-    const { display = "block", animation, duration=300, className = null, is_show } = options;
+const animate = async (element: HTMLElement, options: AnimateOptions) => {
+    const { display, animation, duration=300, className = null, is_show } = options;
 
     if (is_show) {
         if (display) {
@@ -19,19 +19,28 @@ const animate = (element: HTMLElement, options: AnimateOptions) => {
         element.classList.add(animation);
         element.style.setProperty('--animate-duration', duration+"ms");
 
-        setTimeout(() => {
-            element.classList.remove(animation);
-        }, duration);
+        // Wait for the animation to finish
+        await new Promise<void>(resolve => {
+            setTimeout(() => {
+                element.classList.remove(animation);
+                resolve(); // Resolve the promise after the timeout
+            }, duration);
+        });
     } else {
         element.classList.add(animation);
         if (className) {
             element.classList.add(className);
         }
         element.style.setProperty('--animate-duration', duration+"ms");
-        setTimeout(() => {
-            element.classList.remove(animation);
-            element.style.display = "none";
-        }, duration);
+
+        // Wait for the animation to finish
+        await new Promise<void>(resolve => {
+            setTimeout(() => {
+                element.classList.remove(animation);
+                element.style.display = "none";
+                resolve(); // Resolve the promise after the timeout
+            }, duration);
+        });
     }
 }
 

@@ -1,11 +1,14 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Landing from "@src/pages/Landing";
+import BaseLayout from "@src/layouts/BaseLayout";
 
 const RouterRoutes = () => (
   <Routes>
-    <Route path="/" element={<Landing />} />
+    <Route element={<BaseLayout />}>
+      <Route path="/" element={<Landing />} />
+    </Route>
   </Routes>
-)
+);
 
 
 const App = () => {
@@ -16,6 +19,6 @@ const App = () => {
       </BrowserRouter>
     </div>
   )
-}
+};
 
 export default App;
