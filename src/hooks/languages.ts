@@ -19,7 +19,10 @@ i18next.use(HttpApi).use(LanguageDetector).init({
     debug: true,
     supportedLngs: ['en', 'ru'],
     resources: resources,
-    fallbackLng: "en",    
+    fallbackLng: "en",
+    interpolation: {
+      escapeValue: true,
+    }
 })
 
 const i18 = i18next;

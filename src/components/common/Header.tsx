@@ -36,7 +36,7 @@ const Header: React.FC<HeaderProps> = ({ navLinks }) => {
 
     const handleMouseLeave = () => {
         setHovered(false);
-        if (languageList.current) { // Check if the ref is not null
+        if (languageList.current) {
             animate(languageList.current, {
                 animation: "animate__flipOutX",
                 is_show: false
@@ -85,7 +85,7 @@ const Header: React.FC<HeaderProps> = ({ navLinks }) => {
 
             
             <div className={`header__lang ${isHovered ? 'active' : ''}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                <span className="header__lang-current">{i18.language}</span>
+                <span className="header__lang-current">{ i18.language }</span>
                 
                 <div className="header__lang-list animate__animated" ref={languageList}>
                     {

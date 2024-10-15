@@ -1,8 +1,21 @@
 {
     "name": "Исмаил",
-    "nav_home": "главная",
-    "nav_projects": "проекты",
-    "nav_blog": "блог",
-    "nav_about": "обо мне",
-    "nav_contacts": "контакты"
+
+    "common": {
+        "nav": {
+            "home": "главная",
+            "projects": "проекты",
+            "blog": "блог",
+            "about": "обо мне",
+            "contacts": "контакты"
+        }
+    },
+    
+
+    "landing": {
+        "main": {
+            "title": "Исмаил <span class='accent'>full-stack</span> разработчик"
+        }
+    }
+    
 }

@@ -1,11 +1,11 @@
+import Main from "@src/components/landing/Main";
 import React from "react";
 
 const Landing: React.FC = () => {
     return (
-        <div>
-            This is landing
-        </div>
-
+        <section className="landing">
+            <Main /> 
+        </section>
     )
 }
 

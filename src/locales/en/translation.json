@@ -1,8 +1,21 @@
 {
     "name": "Ismoil",
-    "nav_home": "home",
-    "nav_projects": "projects",
-    "nav_blog": "blog",
-    "nav_about": "about-me",
-    "nav_contacts": "contacts"
+
+    "common": {
+        "nav": {
+            "home": "home",
+            "projects": "projects",
+            "blog": "blog",
+            "about": "about-me",
+            "contacts": "contacts"
+        }
+    },
+    
+
+    "landing": {
+        "main": {
+            "title": "Ismoil is a <span class='accent'>full-stack</span> developer"
+        }
+    }
+    
 }

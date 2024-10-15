@@ -7,27 +7,27 @@ import Social from "@src/components/common/Social";
 const navLinks = [
     {
         id: 1,
-        title: i18.t("nav_home"),
+        title: i18.t("common.nav.home"),
         href: "/",
     },
     {
         id: 2,
-        title: i18.t("nav_projects"),
+        title: i18.t("common.nav.projects"),
         href: "/projects",
     },
     {
         id: 3,
-        title: i18.t("nav_blog"),
+        title: i18.t("common.nav.blog"),
         href: "/blog",
     },
     {
         id: 4,
-        title: i18.t("nav_about"),
+        title: i18.t("common.nav.about"),
         href: "/about",
     },
     {
         id: 5,
-        title: i18.t("nav_contacts"),
+        title: i18.t("common.nav.contacts"),
         href: "/contacts",
     },
 ];
