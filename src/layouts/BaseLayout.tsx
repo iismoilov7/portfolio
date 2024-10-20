@@ -37,12 +37,12 @@ const SocialLinks = [
     {
         id: 0,
         href: "https://github.com/iismoilov7",
-        icon: "assets/img/common/github.png"
+        icon: "/assets/img/common/github.png"
     },
     {
         id: 1,
         href: "https://t.me/iismoilov7",
-        icon: "assets/img/common/telegram.png"
+        icon: "/assets/img/common/telegram.png"
     }
 ];
 
