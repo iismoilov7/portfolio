@@ -14,7 +14,16 @@
 
     "landing": {
         "main": {
-            "title": "Исмаил <span class='accent'>full-stack</span> разработчик"
+            "title": "Исмаил <span class='accent'>full-stack</span> разработчик",
+            "subtitle": "Я делаю responsive сайты",
+            "button": "Напиши мне !!",
+            "status": {
+                "text": "В данный момент работаю над портфолио"
+            }
+        },
+        "quote": {
+            "text": "С великой силой приходит большой счет за электричество",
+            "author": "- Доктор Кто"
         }
     }
     

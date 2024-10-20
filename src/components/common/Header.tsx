@@ -13,7 +13,6 @@ interface HeaderProps {
     }[];
 }
 
-
 const Header: React.FC<HeaderProps> = ({ navLinks }) => {
     const [isHovered, setHovered] = useState(false);
     const [isOpen, setOpen] = useState(false);
@@ -22,6 +21,13 @@ const Header: React.FC<HeaderProps> = ({ navLinks }) => {
     const navTag = useRef<HTMLHeadElement | null>(null);
     const allLanguages = Object.keys(i18.services.resourceStore.data).filter(lang => lang !== i18.language);
 
+    document.addEventListener("click", (event) => {
+        const langMenu = event.target as Element;
+        
+        if (!langMenu.closest(".header__lang")) {
+            handleMouseLeave();
+        }
+    });
 
     const handleMouseEnter = () => {
         setHovered(true);
@@ -84,7 +90,7 @@ const Header: React.FC<HeaderProps> = ({ navLinks }) => {
             </nav>
 
             
-            <div className={`header__lang ${isHovered ? 'active' : ''}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            <div className={`header__lang ${isHovered ? 'active' : ''}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} onClick={handleMouseEnter}>
                 <span className="header__lang-current">{ i18.language }</span>
                 
                 <div className="header__lang-list animate__animated" ref={languageList}>

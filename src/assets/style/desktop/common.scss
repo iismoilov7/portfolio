@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     transition: 0.3s all;
     color: $white;
-    -webkit-tap-highlight-color: transparent; 
+    -webkit-tap-highlight-color: transparent;
 }
 
 #root, body {
@@ -45,6 +46,12 @@ a {
 button {
     background: none;
     border: none;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
 }
 
 .accent {

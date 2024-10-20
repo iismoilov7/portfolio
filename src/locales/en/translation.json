@@ -14,7 +14,17 @@
 
     "landing": {
         "main": {
-            "title": "Ismoil is a <span class='accent'>full-stack</span> developer"
+            "title": "Ismoil is a <span class='accent'>full-stack</span> developer",
+            "subtitle": "He crafts responsive websites where technologies meet creativity",
+            "button": "Contact me !!",
+            "status": {
+                "text": "Currently working on Portfolio"
+            }
+        },
+
+        "quote": {
+            "text": "With great power comes great electricity bill",
+            "author": "- Dr. Who"
         }
     }
     

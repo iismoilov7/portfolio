@@ -15,7 +15,11 @@
 }
 
 @include _768 {
+}
+
+
+@include _480 {
     .wrapper {
-        padding: 0;
+        padding: 0 20px;
     }
 }
