@@ -1,0 +1,20 @@
+.projects {
+    margin-top: 74px;
+
+
+    &__link {
+        display: flex;
+        margin-left: auto;
+        font-weight: 500;
+        white-space: nowrap;
+    }
+
+    &__swiper {
+        width: 100%;
+        height: fit-content;
+
+        .swiper-slide {
+            border: 1px solid $white;
+        }
+    }
+}
