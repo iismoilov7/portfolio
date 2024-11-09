@@ -6,7 +6,6 @@ const RouterRoutes = () => (
   <Routes>
     <Route element={<BaseLayout />}>
       <Route path="/" element={<Landing />} />
-      <Route path="/portfolio" element={<Landing />} />
     </Route>
   </Routes>
 );

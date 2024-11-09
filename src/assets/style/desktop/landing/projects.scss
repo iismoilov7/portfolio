@@ -10,11 +10,43 @@
     }
 
     &__swiper {
+        margin-top: 48px;
         width: 100%;
         height: fit-content;
 
-        .swiper-slide {
+        .swiper-wrapper {
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__project {
+        max-width: 330px;
+        border: 1px solid $white;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+        &-stack {
+            padding: 8px;
             border: 1px solid $white;
+        }
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            padding: 16px;
+            gap: 16px;
+
+            &-title {
+                font-size: 24px;
+                font-weight: 500;
+            }
+        }
+
+        &-btn {
+            border: 1px solid $primary;
+            padding: 8px 16px;
         }
     }
 }

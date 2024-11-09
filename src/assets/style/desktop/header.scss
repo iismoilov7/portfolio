@@ -9,6 +9,8 @@
     display: flex;
     justify-content: space-between;
     background-color: $background;
+    height: 60px;
+    z-index: 99;
     
     &__nav {
         margin-left: auto;

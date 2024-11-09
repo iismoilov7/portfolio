@@ -26,7 +26,38 @@
             "author": "- Dr. Who"
         },
         "projects": {
-            "title": "<span class='accent'>#</span>projects"
+            "title": "<span class='accent'>#</span>projects",
+            "link": "View all ~~>",
+            "slider": [
+                {
+                    "src": "/assets/img/projects/minecraft.jpg",
+                    "stack": "HTML SCSS Python Flask",
+                    "title": "ChertNodes",
+                    "description": "Minecraft servers hosting",
+                    "link": "Live ~~>",
+                    "href": "https://example.com"
+                },
+                {
+                    "src": "/assets/img/projects/minecraft.jpg",
+                    "stack": "HTML SCSS Python Flask",
+                    "title": "ChertNodes",
+                    "description": "Minecraft servers hosting",
+                    "link": "Live ~~>",
+                    "href": "https://example.com"
+                },
+                {
+                    "src": "/assets/img/projects/minecraft.jpg",
+                    "stack": "HTML SCSS Python Flask",
+                    "title": "ChertNodes",
+                    "description": "Minecraft servers hosting",
+                    "link": "Live ~~>",
+                    "href": "https://example.com"
+                }
+            ],
+            "button": "live"
+        },
+        "skills": {
+            "title": "<span class='accent'>#</span>skills"
         }
     }
     

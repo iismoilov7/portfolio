@@ -26,7 +26,37 @@
             "author": "- Доктор Кто"
         },
         "projects": {
-            "title": "<span class='accent'>#</span>проекты"
+            "title": "<span class='accent'>#</span>проекты",
+            "link": "Посмотреть все ~~>",
+            "slider": [
+                {
+                    "src": "/assets/img/projects/minecraft.jpg",
+                    "stack": "HTML SCSS Python Flask",
+                    "title": "ChertNodes",
+                    "description": "Хостинг майнкратф серверов",
+                    "link": "Посмотреть ~~>",
+                    "href": "https://example.com"
+                },
+                {
+                    "src": "/assets/img/projects/minecraft.jpg",
+                    "stack": "HTML SCSS Python Flask",
+                    "title": "ChertNodes",
+                    "description": "Хостинг майнкратф серверов",
+                    "link": "Посмотреть ~~>",
+                    "href": "https://example.com"
+                },
+                {
+                    "src": "/assets/img/projects/minecraft.jpg",
+                    "stack": "HTML SCSS Python Flask",
+                    "title": "ChertNodes",
+                    "description": "Хостинг майнкратф серверов",
+                    "link": "Посмотреть ~~>",
+                    "href": "https://example.com"
+                }
+            ]
+        },
+        "skills": {
+            "title": "<span class='accent'>#</span>скиллы"
         }
     }
     

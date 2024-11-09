@@ -1,23 +1,49 @@
 import React, { useEffect } from "react";
 import { i18 } from "@src/hooks/languages";
 import { Link } from "react-router-dom";
-import Swiper from 'swiper';
-import 'swiper/css';
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+interface Project {
+    src: string;
+    stack: string;
+    title: string;
+    description: string;
+    href: string;
+    link: string;
+}
 
 interface ProjectsProps {
 
 }
+const projects = i18.t("landing.projects.slider", { returnObjects: true }) as Project[];
 
 const Projects: React.FC<ProjectsProps> = () => {
-    useEffect(() => {
-        const swiper = new Swiper('.swiper', {
-            loop: true,
-            slidesPerView: 3,
-            centeredSlides: false,
-            spaceBetween: 30,
-            initialSlide: 3,
-        });
-    }, [])
+    const sliderSettings = {
+        dots: true,
+        arrows: false,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 770,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    };
 
 
     return (
@@ -28,18 +54,35 @@ const Projects: React.FC<ProjectsProps> = () => {
                     <div className="accent-line"></div>
                 </div>
 
-                <Link to={""} className="projects__link">View all ~~&gt;</Link>
+                <Link to={""} className="projects__link">{ i18.t("landing.projects.link") }</Link>
             </div>
 
 
-            <div className="projects__swiper swiper">
-                <div className="swiper-wrapper">
-                    <div className="swiper-slide">Slide 1</div>
-                    <div className="swiper-slide">Slide 2</div>
-                    <div className="swiper-slide">Slide 3</div>
-                </div>
-                <div className="swiper-pagination"></div>
-            </div>
+            <Slider className="projects__swiper swiper" {...sliderSettings}>
+                {projects.map((project, index) => (
+                    <div key={index}>
+                        <div className="projects__project swiper-slide">
+                            <img src={project.src} alt="" className="projects__project-preview" />
+                            <div className="projects__project-stack">
+                                { project.stack }
+                            </div>
+                            <div className="projects__project-info">
+                                <div className="projects__project-info-title">
+                                    { project.title }
+                                </div>
+
+                                <div className="projects__project-info-desc">
+                                    { project.description }
+                                </div>
+
+                                <div className="flex">
+                                    <Link to={project.href} className="projects__project-btn">{ project.link }</Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </Slider>
 
         </section>
     );
