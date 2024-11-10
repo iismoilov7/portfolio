@@ -33,7 +33,7 @@
                     "src": "/assets/img/projects/minecraft.jpg",
                     "stack": "HTML SCSS Python Flask",
                     "title": "ChertNodes",
-                    "description": "Хостинг майнкратф серверов",
+                    "description": "Хостинг майнкрафт серверов",
                     "link": "Посмотреть ~~>",
                     "href": "https://example.com"
                 },
@@ -41,7 +41,7 @@
                     "src": "/assets/img/projects/minecraft.jpg",
                     "stack": "HTML SCSS Python Flask",
                     "title": "ChertNodes",
-                    "description": "Хостинг майнкратф серверов",
+                    "description": "Хостинг майнкрафт серверов",
                     "link": "Посмотреть ~~>",
                     "href": "https://example.com"
                 },
@@ -49,14 +49,64 @@
                     "src": "/assets/img/projects/minecraft.jpg",
                     "stack": "HTML SCSS Python Flask",
                     "title": "ChertNodes",
-                    "description": "Хостинг майнкратф серверов",
+                    "description": "Хостинг майнкрафт серверов",
                     "link": "Посмотреть ~~>",
                     "href": "https://example.com"
                 }
             ]
         },
         "skills": {
-            "title": "<span class='accent'>#</span>скиллы"
+            "title": "<span class='accent'>#</span>скиллы",
+            "languages": "Языки",
+            "databases": "База Данных",
+            "tools": "Инструменты",
+            "other": "Другое",
+            "frameworks": "Фреймворки",
+
+            "languages_list": [
+                "TypeScript",
+                "Python",
+                "JavaScript",
+                "PHP"
+            ],
+            "databases_list": [
+                "SQLite",
+                "PostgreSQL",
+                "MySQL"
+            ],
+            "tools_list": [
+                "VSCode",
+                "Linux",
+                "Figma",
+                "Git",
+                "Photoshop"
+            ],
+            "other_list": [
+                "HTML",
+                "CSS",
+                "SCSS",
+                "jQuery",
+                "Nunjucks",
+                "Jinja",
+                "REST API",
+                "Webpack"
+            ],
+            "frameworks_list": [
+                "React",
+                "Aiogram 3",
+                "Flask",
+                "FastAPI",
+                "Selenium"
+            ]
+        },
+        "about": {
+            "title": "<span class='accent'>#</span>Обо мне",
+            "description": [
+                "Привет, Я Исмаил!",
+                "Я программист самоучка из Таджикистана, Чкаловск. В данный момент живу в Москве. Могу разработать сервис, платформу или софт под ключ.",
+                "Преобразование моего творчества и знаний в веб-сайты было моей страстью уже больше года. Я помогаю различным клиентам установить свое присутствие в Интернете. Я всегда стремлюсь узнавать о новейших технологиях и фреймворках."
+            ],
+            "button": "Подробнее ->"
         }
     }
     

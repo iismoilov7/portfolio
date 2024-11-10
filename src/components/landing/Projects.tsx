@@ -39,7 +39,8 @@ const Projects: React.FC<ProjectsProps> = () => {
                 breakpoint: 770,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    arrows: true
                 }
             }
         ]
@@ -76,7 +77,7 @@ const Projects: React.FC<ProjectsProps> = () => {
                                 </div>
 
                                 <div className="flex">
-                                    <Link to={project.href} className="projects__project-btn">{ project.link }</Link>
+                                    <Link to={project.href} className="projects__project-btn btn">{ project.link }</Link>
                                 </div>
                             </div>
                         </div>

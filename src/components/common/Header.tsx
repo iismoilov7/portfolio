@@ -102,7 +102,7 @@ const Header: React.FC<HeaderProps> = ({ navLinks }) => {
                 <div className="header__lang-list animate__animated" ref={languageList}>
                     {
                         allLanguages.map((language) => (
-                            <div className="header__lang-list-item" key={language} onClick={() => { changeLanguage(language) }}>{language}</div>
+                            <div className="header__lang-list-item" key={language} onClick={() => { if (isHovered) { changeLanguage(language) } }}>{language}</div>
                         ))
                     }
                 </div>

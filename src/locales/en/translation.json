@@ -57,8 +57,57 @@
             "button": "live"
         },
         "skills": {
-            "title": "<span class='accent'>#</span>skills"
+            "title": "<span class='accent'>#</span>skills",
+            "languages": "Languages",
+            "databases": "Databases",
+            "tools": "Tools",
+            "other": "Other",
+            "frameworks": "Frameworks",
+
+            "languages_list": [
+                "TypeScript",
+                "Python",
+                "JavaScript",
+                "PHP"
+            ],
+            "databases_list": [
+                "SQLite",
+                "PostgreSQL",
+                "MySQL"
+            ],
+            "tools_list": [
+                "VSCode",
+                "Linux",
+                "Figma",
+                "Git",
+                "Photoshop"
+            ],
+            "other_list": [
+                "HTML",
+                "CSS",
+                "SCSS",
+                "jQuery",
+                "Nunjucks",
+                "Jinja",
+                "REST API",
+                "Webpack"
+            ],
+            "frameworks_list": [
+                "React",
+                "Aiogram 3",
+                "Flask",
+                "FastAPI",
+                "Selenium"
+            ]
+        },
+        "about": {
+            "title": "<span class='accent'>#</span>about-me",
+            "description": [
+                "Hello, I'm Ismoil!",
+                "I am a self-taught programmer from Tajikistan, Chkalovsk. Currently I live in Moscow. I can provide a turnkey service, platform or software.",
+                "Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks."
+            ],
+            "button": "Read more ->"
         }
     }
-    
 }

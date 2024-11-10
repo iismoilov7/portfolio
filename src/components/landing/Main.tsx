@@ -11,7 +11,7 @@ const Main: React.FC<MainProps> = () => {
             <div className="main__box">
                 <div className="main__title" dangerouslySetInnerHTML={{__html: i18.t("landing.main.title") }} ></div>
                 <div className="main__subtitle">{ i18.t("landing.main.subtitle") }</div>
-                <button className="main__btn">{ i18.t("landing.main.button") }</button>
+                <button className="main__btn btn">{ i18.t("landing.main.button") }</button>
             </div>
 
             <div className="main__box">

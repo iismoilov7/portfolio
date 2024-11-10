@@ -18,17 +18,7 @@
     }
 
     &__btn {
-        border: 1px solid $primary;
-        padding: 8px 16px;
-        font-weight: 600;
         margin-top: 24px;
-        max-width: 148px;
-        font-size: 16px;
-
-        &:hover {
-            background-color: $primary;
-            color: $background;
-        }
     }
 
     &__box {
@@ -38,6 +28,10 @@
 
     &__img {
         max-width: 454px;
+        filter: blur(5px);
+        &:hover {
+            filter: unset;
+        }
     }
 
     

@@ -19,6 +19,7 @@
     font-family: sans-serif;
     background-color: $background;
     font-family: "Fira Code", monospace;
+    font-size: 16px;
 }
 
 .wrapper {
@@ -88,14 +89,34 @@ img {
 .title {
     font-size: 32px;
     font-weight: 500;
+    white-space: nowrap;
 }
 
+.btn {
+    padding: 8px 16px;
+    border: 1px solid $primary;
+    width: fit-content;
+    font-weight: 500;
+    font-size: 16px;
+    
+    &:hover {
+        opacity: 1;
+        background-color: #483b55;
+    }
+}
 
 .flex {
     display: flex;
     align-items: center;
     gap: 10px;
     width: 100%;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
 }
 
 
@@ -109,6 +130,8 @@ img {
 .slick-dots {
     bottom: -30px;
     & li {
+        margin: 0;
+        padding: 10px 0px 0px 0px;
         & button {
             opacity: 0.5;
             background-color: $white;
@@ -126,5 +149,20 @@ img {
             background-color: $white;
             opacity: 1;
         }
+    }
+}
+
+
+.slick-next {
+    right: -10px;
+    &::before {
+        font-family: initial;
+    }
+}
+
+.slick-prev {
+    left: -10px;
+    &::before {
+        font-family: initial;
     }
 }

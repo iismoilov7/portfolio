@@ -1,0 +1,30 @@
+@include _768 {
+    .about {
+        &__content {
+            flex-direction: column;
+            gap: 40px;
+            position: relative;
+        }
+
+        &__description {
+            font-size: 16px;
+            z-index: 2;
+        }
+
+        &__image {
+            position: absolute;
+            max-width: 90px;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+    }
+}
+
+@include _480 {
+    .about {
+        &__description {
+            font-size: 14px;
+        }
+    }
+}

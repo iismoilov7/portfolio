@@ -3,15 +3,17 @@ import Quote from "@src/components/landing/Quote";
 import Projects from "@src/components/landing/Projects";
 import Skills from "@src/components/landing/Skills";
 import React from "react";
+import About from "@src/components/landing/About";
 
 const Landing: React.FC = () => {
     return (
-        <section className="landing">
+        <div className="landing">
             <Main />
             <Quote />
             <Projects />
             <Skills />
-        </section>
+            <About />
+        </div>
     )
 }
 
