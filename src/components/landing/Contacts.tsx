@@ -24,7 +24,7 @@ const Contacts: React.FC<ContactsProps> = ({}) => {
                 <div>{ i18.t("landing.contacts.telegram") }</div>
             </Link>
 
-            <Link to={"mailto://ismoil@inverso.ai"} target="_blank" className="contacts__box-link flex">
+            <Link to={"mailto:ismoil@inverso.ai"} target="_blank" className="contacts__box-link flex">
                 <img src="/assets/img/common/email.png" alt="Email icon" />
                 <div>{ i18.t("landing.contacts.email") }</div>
             </Link>
