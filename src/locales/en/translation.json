@@ -22,8 +22,8 @@
             }
         },
         "quote": {
-            "text": "With great power comes great electricity bill",
-            "author": "- Dr. Who"
+            "text": "Life is a sea. Do you wish to sail? — Build a ship from good deeds.",
+            "author": "- Rudaki"
         },
         "projects": {
             "title": "<span class='accent'>#</span>projects",
@@ -76,11 +76,12 @@
                 "MySQL"
             ],
             "tools_list": [
-                "VSCode",
+                "Framer",
                 "Linux",
                 "Figma",
                 "Git",
-                "Photoshop"
+                "Photoshop",
+                "BAS"
             ],
             "other_list": [
                 "HTML",
@@ -108,6 +109,13 @@
                 "Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks."
             ],
             "button": "Read more ->"
+        },
+        "contacts": {
+            "title": "<span class='accent'>#</span>contacts",
+            "description": "I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me",
+            "msgme": "Message me here",
+            "telegram": "iismoilov7",
+            "email": "ismoil@inverso.ai"
         }
     }
 }
