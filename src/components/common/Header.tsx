@@ -80,14 +80,15 @@ const Header: React.FC<HeaderProps> = ({ navLinks }) => {
     }
 
 
+
     return (
         <header className="header animate__animated" ref={headerTag}>
-            <div className="header__brand">Ismoil</div>
+            <div className="header__brand brand">Ismoil</div>
             
             <nav className="header__nav animate__animated" ref={navTag}>
                 {
                     navLinks.map((link) => (
-                        <Link key={link.id} to={link.href} className="header__nav-link">
+                        <Link key={link.id} to={link.href} className="header__nav-link" onClick={handleClick}>
                             <span>#</span>
                             {link.title}
                         </Link>

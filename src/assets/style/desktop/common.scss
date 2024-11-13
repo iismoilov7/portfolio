@@ -22,7 +22,7 @@
     font-size: 16px;
 }
 
-.wrapper {
+.base_layout {
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -58,6 +58,9 @@ img {
     color: $primary;
 }
 
+.icon {
+    max-width: 25px;
+}
 
 .social-fixed {
     position: fixed;
@@ -165,4 +168,33 @@ img {
     &::before {
         font-family: initial;
     }
+}
+
+
+.brand {
+    position: relative;
+    font-weight: 800;
+    position: relative;
+    margin-left: 24px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -24px;
+        width: 16px;
+        height: 16px;
+        background: url("../assets/img/logo.png") no-repeat center center / contain;
+    }
+}
+
+
+// All pages with fadein animation
+.landing, .notfound {
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }

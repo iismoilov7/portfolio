@@ -1,12 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-interface SocialProps {
-    SocialLinks: {
-        id: number;
-        href: string;
-        icon: string;
-    }[];
+
+export interface SocialLink {
+    id: number;
+    href: string;
+    icon: string;
+};
+
+export interface SocialProps {
+    SocialLinks: SocialLink[];
 }
 
 const Social: React.FC<SocialProps> = ({ SocialLinks }) => {
@@ -18,7 +21,7 @@ const Social: React.FC<SocialProps> = ({ SocialLinks }) => {
                 {
                     SocialLinks.map((social) => (
                         <Link key={social.id} to={social.href} target="_blank" className="social-fixed__links-link">
-                            <img src={social.icon} alt={`${social.icon.split("/").pop()?.split(".")[0]} Icon`} />
+                            <img src={social.icon} alt={`${social.icon.split("/").pop()?.split(".")[0]} Icon`} className="icon" />
                         </Link>
                     ))
                 }

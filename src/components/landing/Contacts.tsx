@@ -1,12 +1,13 @@
+import React from 'react';
 import { i18 } from '@src/hooks/languages';
-import React from 'react'
 import { Link } from 'react-router-dom';
 
 interface ContactsProps {
-  
+  email: string;
+  telegram: string;
 }
 
-const Contacts: React.FC<ContactsProps> = ({}) => {
+const Contacts: React.FC<ContactsProps> = ({ email, telegram }) => {
   return ( 
     <section className="contacts">
         <div className="flex">
@@ -19,13 +20,13 @@ const Contacts: React.FC<ContactsProps> = ({}) => {
         <div className="contacts__box flex-col">
             <div className="contacts__box-item">{ i18.t("landing.contacts.msgme") }</div>
             
-            <Link to={"https://t.me/iismoilov7"} target="_blank" className="contacts__box-link flex">
+            <Link to={telegram} target="_blank" className="contacts__box-link flex">
                 <img src="/assets/img/common/telegram.png" alt="Telegram icon" />
                 <div>{ i18.t("landing.contacts.telegram") }</div>
             </Link>
 
-            <Link to={"mailto:ismoil@inverso.ai"} target="_blank" className="contacts__box-link flex">
-                <img src="/assets/img/common/email.png" alt="Email icon" />
+            <Link to={`mailto:${email}`} target="_blank" className="contacts__box-link flex">
+                <img src="/assets/img/common/email.png" alt="Email icon" className="icon" />
                 <div>{ i18.t("landing.contacts.email") }</div>
             </Link>
         </div>

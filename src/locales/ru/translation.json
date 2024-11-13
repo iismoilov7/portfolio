@@ -8,14 +8,18 @@
             "blog": "блог",
             "about": "обо мне",
             "contacts": "контакты"
-        }
+        },
+        "title": "Исмаил | Портфолио"
     },
     
+    "errors": {
+        "notfound": "404 | Страница не найдена"
+    },
 
     "landing": {
         "main": {
-            "title": "Исмаил <span class='accent'>full-stack</span> разработчик",
-            "subtitle": "Я делаю responsive сайты",
+            "title": "Исмаил — <span class='accent'>full-stack</span> разработчик<br /> и <span class='accent'>Python</span> LLM специалист",
+            "subtitle": "Разрабатываю, боксирую и играю",
             "button": "Напиши мне !!",
             "status": {
                 "text": "В данный момент работаю над портфолио"
@@ -30,28 +34,28 @@
             "link": "Посмотреть все ~~>",
             "slider": [
                 {
-                    "src": "/assets/img/projects/minecraft.jpg",
-                    "stack": "HTML SCSS Python Flask",
-                    "title": "ChertNodes",
-                    "description": "Хостинг майнкрафт серверов",
+                    "src": "/assets/img/projects/inversoai.png",
+                    "stack": "React TS Python PostgreSQL Framer",
+                    "title": "Inverso AI",
+                    "description": "Получите доступ к анализу криптовалюты через AI-чат-интерфейс.",
                     "link": "Посмотреть ~~>",
-                    "href": "https://example.com"
+                    "href": "https://inverso.ai"
                 },
                 {
-                    "src": "/assets/img/projects/minecraft.jpg",
-                    "stack": "HTML SCSS Python Flask",
-                    "title": "ChertNodes",
-                    "description": "Хостинг майнкрафт серверов",
+                    "src": "/assets/img/projects/danesh.png",
+                    "stack": "HTML CSS Python Flask",
+                    "title": "Danesh",
+                    "description": "Сервис по обучение студентов через AI чат бот",
                     "link": "Посмотреть ~~>",
-                    "href": "https://example.com"
+                    "href": "https://danesh.io"
                 },
                 {
-                    "src": "/assets/img/projects/minecraft.jpg",
-                    "stack": "HTML SCSS Python Flask",
-                    "title": "ChertNodes",
-                    "description": "Хостинг майнкрафт серверов",
+                    "src": "/assets/img/projects/krsynergy.png",
+                    "stack": "Gulp SCSS PHP JS",
+                    "title": "Кадровый Резерв Лендинг",
+                    "description": "Лендинг страницы университета Синергия",
                     "link": "Посмотреть ~~>",
-                    "href": "https://example.com"
+                    "href": "https://kr.synergy.ru"
                 }
             ]
         },
@@ -90,7 +94,7 @@
                 "Nunjucks",
                 "Jinja",
                 "REST API",
-                "Webpack"
+                "Gulp"
             ],
             "frameworks_list": [
                 "React",
@@ -115,6 +119,11 @@
             "msgme": "Напишите мне сюда",
             "telegram": "iismoilov7",
             "email": "ismoil@inverso.ai"
+        },
+        "footer": {
+            "description": "Full-Stack разработчик и специалист по Python LLM",
+            "media": "Соц.сети",
+            "copyright": "© Copyright 2024. Сделано Исмаилом<br/> <a href='https://www.figma.com/@elias_dev' target='_blank' class='accent'>Спасибо Элиасу за вдохновение в дизайне</a>"
         }
     }
     

@@ -3,6 +3,8 @@ import { Outlet } from "react-router-dom";
 import { i18 } from "@src/hooks/languages";
 import Header from "@src/components/common/Header";
 import Social from "@src/components/common/Social";
+import Footer from "@src/components/common/Footer";
+import { email, SocialLinks } from "@src/config";
 
 const navLinks = [
     {
@@ -33,26 +35,19 @@ const navLinks = [
 ];
 
 
-const SocialLinks = [
-    {
-        id: 0,
-        href: "https://github.com/iismoilov7",
-        icon: "/assets/img/common/github.png"
-    },
-    {
-        id: 1,
-        href: "https://t.me/iismoilov7",
-        icon: "/assets/img/common/telegram.png"
-    }
-];
+
 
 const BaseLayout: React.FC = () => {
     return (
-        <div className="base_layout">
+        <>
             <Social SocialLinks={SocialLinks} />
             <Header navLinks={navLinks} />
-            <Outlet />
-        </div>
+            <div className="base_layout">
+                <Outlet />
+            </div>
+            <Footer SocialLinks={SocialLinks} email={email} />
+        </>
+
     );
 };
 

@@ -1,11 +1,11 @@
 @include _1440 {
-    .wrapper {
+    .base_layout {
         padding: 0 100px;
     }
 }
 
 @include _1024 {
-    .wrapper {
+    .base_layout {
         padding: 0 50px;
     }
 
@@ -22,11 +22,12 @@
     #root, body {
         font-size: 14px;
     }
-    .wrapper {
+    .base_layout {
         padding: 0 20px;
     }
 
     .title {
         font-size: 24px;
     }
+
 }

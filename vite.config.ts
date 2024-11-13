@@ -21,5 +21,12 @@ export default defineConfig({
       '@src': path.resolve(__dirname, 'src'),
       '@styles': path.resolve(__dirname, 'src/assets/styles'),
     },
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: 'modern-compiler' 
+      }
+    }
   }
 })

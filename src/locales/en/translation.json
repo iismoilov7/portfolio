@@ -8,14 +8,19 @@
             "blog": "blog",
             "about": "about-me",
             "contacts": "contacts"
-        }
+        },
+        "title": "Ismoil | Portfolio"
+    },
+
+    "errors": {
+        "notfound": "404 | Page not found"
     },
     
 
     "landing": {
         "main": {
-            "title": "Ismoil is a <span class='accent'>full-stack</span> developer",
-            "subtitle": "He crafts responsive websites where technologies meet creativity",
+            "title": "Ismoil is a <span class='accent'>full-stack</span> developer<br /> and <span class='accent'>Python</span> LLM Specialist",
+            "subtitle": "I develop, box, and play.",
             "button": "Contact me !!",
             "status": {
                 "text": "Currently working on Portfolio"
@@ -30,28 +35,28 @@
             "link": "View all ~~>",
             "slider": [
                 {
-                    "src": "/assets/img/projects/minecraft.jpg",
-                    "stack": "HTML SCSS Python Flask",
-                    "title": "ChertNodes",
-                    "description": "Minecraft servers hosting",
-                    "link": "Live ~~>",
-                    "href": "https://example.com"
+                    "src": "/assets/img/projects/inversoai.png",
+                    "stack": "React TS Python PostgreSQL Framer",
+                    "title": "Inverso AI",
+                    "description": "Access real-time cryptocurrency analysis via AI chat interface.",
+                    "link": "View ~~>",
+                    "href": "https://inverso.ai"
                 },
                 {
-                    "src": "/assets/img/projects/minecraft.jpg",
-                    "stack": "HTML SCSS Python Flask",
-                    "title": "ChertNodes",
-                    "description": "Minecraft servers hosting",
-                    "link": "Live ~~>",
-                    "href": "https://example.com"
+                    "src": "/assets/img/projects/danesh.png",
+                    "stack": "HTML CSS Python Flask",
+                    "title": "Danesh",
+                    "description": "A service for teaching students through an AI chatbot.",
+                    "link": "View ~~>",
+                    "href": "https://danesh.io"
                 },
                 {
-                    "src": "/assets/img/projects/minecraft.jpg",
-                    "stack": "HTML SCSS Python Flask",
-                    "title": "ChertNodes",
-                    "description": "Minecraft servers hosting",
-                    "link": "Live ~~>",
-                    "href": "https://example.com"
+                    "src": "/assets/img/projects/krsynergy.png",
+                    "stack": "Gulp SCSS PHP JS",
+                    "title": "Personnel Reserve Landing",
+                    "description": "Landing page for Synergy University.",
+                    "link": "View ~~>",
+                    "href": "https://kr.synergy.ru"
                 }
             ],
             "button": "live"
@@ -91,7 +96,7 @@
                 "Nunjucks",
                 "Jinja",
                 "REST API",
-                "Webpack"
+                "Gulp"
             ],
             "frameworks_list": [
                 "React",
@@ -116,6 +121,11 @@
             "msgme": "Message me here",
             "telegram": "iismoilov7",
             "email": "ismoil@inverso.ai"
+        },
+        "footer": {
+            "description": "Full-Stack Developer & Python LLM Specialist",
+            "media": "Media",
+            "copyright": "© Copyright 2024. Made by Ismoil<br/> <a href='https://www.figma.com/@elias_dev' target='_blank' class='accent'>Thx to Elias for design inspiration</a>"
         }
     }
 }

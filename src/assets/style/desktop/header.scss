@@ -30,20 +30,6 @@
         }
     }
 
-    &__brand {
-        font-weight: 800;
-        position: relative;
-        margin-left: 24px;
-        &::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: -24px;
-            width: 16px;
-            height: 16px;
-            background: url("../assets/img/logo.png") no-repeat center center / contain;
-        }
-    }
 
     &__lang {
         margin-left: 32px;

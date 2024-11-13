@@ -77,7 +77,7 @@ const Projects: React.FC<ProjectsProps> = () => {
                                 </div>
 
                                 <div className="flex">
-                                    <Link to={project.href} className="projects__project-btn btn">{ project.link }</Link>
+                                    <Link to={project.href} target="_blank" className="projects__project-btn btn">{ project.link }</Link>
                                 </div>
                             </div>
                         </div>
