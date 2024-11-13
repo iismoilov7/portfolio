@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { i18 } from "@src/hooks/languages";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
