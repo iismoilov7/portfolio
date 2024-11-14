@@ -53,10 +53,18 @@
                 {
                     "src": "/assets/img/projects/krsynergy.png",
                     "stack": "Gulp SCSS PHP JS",
-                    "title": "Personnel Reserve Landing",
+                    "title": "University Landing",
                     "description": "Landing page for Synergy University.",
                     "link": "View ~~>",
                     "href": "https://kr.synergy.ru"
+                },
+                {
+                    "src": "/assets/img/projects/minecraft.png",
+                    "stack": "Gulp SCSS JS HTML",
+                    "title": "Minecraft Server Landing",
+                    "description": "Landing page for Minecraft Server.",
+                    "link": "View ~~>",
+                    "href": "https://iismoilov7.github.io/minecraft-server-landing/build/"
                 }
             ],
             "button": "live"

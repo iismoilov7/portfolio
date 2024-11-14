@@ -56,6 +56,14 @@
                     "description": "Лендинг страницы университета Синергия",
                     "link": "Посмотреть ~~>",
                     "href": "https://kr.synergy.ru"
+                },
+                {
+                    "src": "/assets/img/projects/minecraft.png",
+                    "stack": "Gulp SCSS JS HTML",
+                    "title": "Лендинг Майнкрафт Сервера",
+                    "description": "Лендинг страница Майнкрафт Сервера",
+                    "link": "Посмотреть ~~>",
+                    "href": "https://iismoilov7.github.io/minecraft-server-landing/build/"
                 }
             ]
         },
