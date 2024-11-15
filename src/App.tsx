@@ -4,11 +4,13 @@ import BaseLayout from "@src/layouts/BaseLayout";
 import { useEffect, useState } from "react";
 import { i18 } from "./hooks/languages";
 import NotFound from "./components/common/NotFound";
+import Projects from "./pages/Projects";
 
 const RouterRoutes = () => (
   <Routes>
     <Route element={<BaseLayout />}>
       <Route path="/" element={<Landing />} />
+      <Route path="/projects" element={<Projects />} />
     </Route>
 
     <Route element={<BaseLayout />}>

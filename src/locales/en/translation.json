@@ -57,14 +57,6 @@
                     "description": "Landing page for Synergy University.",
                     "link": "View ~~>",
                     "href": "https://kr.synergy.ru"
-                },
-                {
-                    "src": "/assets/img/projects/minecraft.png",
-                    "stack": "Gulp SCSS JS HTML",
-                    "title": "Minecraft Server Landing",
-                    "description": "Landing page for Minecraft Server.",
-                    "link": "View ~~>",
-                    "href": "https://iismoilov7.github.io/minecraft-server-landing/build/"
                 }
             ],
             "button": "live"
@@ -134,6 +126,76 @@
             "description": "Full-Stack Developer & Python LLM Specialist",
             "media": "Media",
             "copyright": "© Copyright 2024. Made by Ismoil<br/> <a href='https://www.figma.com/@elias_dev' target='_blank' class='accent'>Thx to Elias for design inspiration</a>"
+        }
+    },
+
+    "projects": {
+        "title": "<span class='accent'>/</span>projects",
+        "subtitle": "Projects in which I participated and developed.",
+        
+        "big-projects": {
+            "title": "<span class='accent'>#</span>serious projects",
+            "slider": [
+                {
+                    "src": "/assets/img/projects/inversoai.png",
+                    "stack": "React TS Python PostgreSQL Framer",
+                    "title": "Inverso AI",
+                    "description": "Access real-time cryptocurrency analysis via AI chat interface.",
+                    "link": "View ~~>",
+                    "href": "https://inverso.ai"
+                },
+                {
+                    "src": "/assets/img/projects/danesh.png",
+                    "stack": "HTML CSS Python Flask",
+                    "title": "Danesh",
+                    "description": "A service for teaching students through an AI chatbot.",
+                    "link": "View ~~>",
+                    "href": "https://danesh.io"
+                },
+                {
+                    "src": "/assets/img/projects/krsynergy.png",
+                    "stack": "Gulp SCSS PHP JS",
+                    "title": "University Landing",
+                    "description": "Landing page for Synergy University.",
+                    "link": "View ~~>",
+                    "href": "https://kr.synergy.ru"
+                },
+                {
+                    "src": "/assets/img/projects/minecraft.png",
+                    "stack": "Gulp SCSS JS HTML",
+                    "title": "Minecraft Server Landing",
+                    "description": "Landing page for Minecraft Server.",
+                    "link": "View ~~>",
+                    "href": "https://iismoilov7.github.io/minecraft-server-landing/build/"
+                }
+            ]
+        },
+
+        "small-projects": {
+            "title": "<span class='accent'>#</span>small projects",
+            "slider": [
+                {
+                    "stack": "Python Selenium BeautifulSoup4",
+                    "title": "Online Testpad Auto Test Solver",
+                    "description": "This is a script for automaticly solving quizes from onlinetestpad.com",
+                    "link": "Github ~~>",
+                    "href": "https://github.com/iismoilov7/test-solver"
+                },
+                {
+                    "stack": "JS",
+                    "title": "YaBlocker",
+                    "description": "YaBlocker is a lightweight Chrome extension designed to remove advertisements from Yandex Search.",
+                    "link": "Github ~~>",
+                    "href": "https://github.com/iismoilov7/yablocker"
+                },
+                {
+                    "stack": "PHP HTML CSS",
+                    "title": "PHP Shell Script",
+                    "description": "This PHP script provides a web-based shell interface that allows users to perform various file operations and execute shell commands on the server.",
+                    "link": "Github ~~>",
+                    "href": "https://github.com/iismoilov7/yablocker"
+                }
+            ]
         }
     }
 }

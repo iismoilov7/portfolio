@@ -9,12 +9,12 @@
         white-space: nowrap;
     }
 
-    &__swiper {
+    &__slider {
         margin-top: 48px;
         width: 100%;
         height: fit-content;
 
-        .swiper-wrapper {
+        .slider-wrapper {
             justify-content: space-between;
             align-items: center;
         }

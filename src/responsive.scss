@@ -5,9 +5,15 @@
 @import 'assets/style/mobile/common.scss';
 @import 'assets/style/mobile/header.scss';
 @import 'assets/style/mobile/footer.scss';
+
+// Landing
 @import 'assets/style/mobile/landing/main.scss';
 @import 'assets/style/mobile/landing/quote.scss';
 @import 'assets/style/mobile/landing/projects.scss';
 @import 'assets/style/mobile/landing/skills.scss';
 @import 'assets/style/mobile/landing/about.scss';
 @import 'assets/style/mobile/landing/contacts.scss';
+
+// Projects
+@import 'assets/style/mobile/projects/big.scss';
+@import 'assets/style/mobile/projects/small.scss';

@@ -9,7 +9,7 @@ import { email, telegram } from "@src/config";
 
 const Landing: React.FC = () => {
     return (
-        <div className="landing">
+        <div className="page-landing">
             <Main />
             <Quote />
             <Projects />

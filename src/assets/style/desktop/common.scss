@@ -96,8 +96,13 @@ img {
 
 .title {
     font-size: 32px;
-    font-weight: 500;
+    font-weight: 600;
     white-space: nowrap;
+}
+
+.subtitle {
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .btn {
@@ -135,11 +140,16 @@ img {
     height: 1px;
 }
 
+
 .slick-dots {
     bottom: -30px;
+    
+
     & li {
         margin: 0;
         padding: 10px 0px 0px 0px;
+        cursor: url("/src//assets/img/common/cursor-pointer.png"), pointer;
+
         & button {
             opacity: 0.5;
             background-color: $white;
@@ -147,6 +157,8 @@ img {
             width: 5px;
             height: 5px;
             border-radius: 50%;
+            cursor: url("/src//assets/img/common/cursor-pointer.png"), pointer;
+
             &::before {
                 display: none;
             }
@@ -163,6 +175,7 @@ img {
 
 .slick-next {
     right: -10px;
+    cursor: url("/src//assets/img/common/cursor-pointer.png"), pointer;
     &::before {
         font-family: initial;
     }
@@ -170,6 +183,7 @@ img {
 
 .slick-prev {
     left: -10px;
+    cursor: url("/src//assets/img/common/cursor-pointer.png"), pointer;
     &::before {
         font-family: initial;
     }
@@ -195,9 +209,11 @@ img {
 
 
 // All pages with fadein animation
-.landing, .notfound {
+.page-landing, .page-projects, .notfound {
     animation: fadeIn 1s;
 }
+
+
 
 @keyframes fadeIn {
     from { opacity: 0; }

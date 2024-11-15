@@ -1,9 +1,15 @@
-import React from "react";
 import { i18 } from "@src/hooks/languages";
-import { Link } from "react-router-dom";
+import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
+
+interface BigProjectsProps {
+
+}
+
+
 
 interface Project {
     src: string;
@@ -14,20 +20,24 @@ interface Project {
     link: string;
 }
 
-interface ProjectsProps {
 
-}
+const BigProjects: React.FC<BigProjectsProps> = () => {
+    const projects = i18.t("projects.big-projects.slider", { returnObjects: true }) as Project[];
 
-const Projects: React.FC<ProjectsProps> = () => {
-    const projects = i18.t("landing.projects.slider", { returnObjects: true }) as Project[];
+    let rows = 1;
 
+    if (projects.length >= 6) {
+        rows = 2;
+    }
+    
     const sliderSettings = {
-        dots: true,
-        arrows: false,
+        dots: false,
+        arrows: true,
         infinite: false,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 3,
+        rows: rows,
         responsive: [
             {
                 breakpoint: 1200,
@@ -47,18 +57,10 @@ const Projects: React.FC<ProjectsProps> = () => {
         ]
     };
 
-
+    
     return (
-        <section className="projects">
-            <div className="flex">
-                <div className="flex">
-                    <h2 className="projects__title title" dangerouslySetInnerHTML={{__html: i18.t("landing.projects.title")}}></h2>
-                    <div className="accent-line"></div>
-                </div>
-
-                <Link to={"/projects"} className="projects__link">{ i18.t("landing.projects.link") }</Link>
-            </div>
-
+        <section className="big-projects">
+            <h2 className="big-projects__title" dangerouslySetInnerHTML={{ __html: i18.t("projects.big-projects.title") }}></h2>
 
             <Slider className="projects__slider slider" {...sliderSettings}>
                 {projects.map((project, index) => (
@@ -85,9 +87,8 @@ const Projects: React.FC<ProjectsProps> = () => {
                     </div>
                 ))}
             </Slider>
-
         </section>
     );
 };
 
-export default Projects;
+export default BigProjects;

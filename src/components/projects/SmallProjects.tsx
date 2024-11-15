@@ -1,12 +1,15 @@
-import React from "react";
 import { i18 } from "@src/hooks/languages";
-import { Link } from "react-router-dom";
+import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
+
+interface SmallProjectsProps {
+
+}
 
 interface Project {
-    src: string;
     stack: string;
     title: string;
     description: string;
@@ -14,20 +17,23 @@ interface Project {
     link: string;
 }
 
-interface ProjectsProps {
+const SmallProjects: React.FC<SmallProjectsProps> = () => {
+    const projects = i18.t("projects.small-projects.slider", { returnObjects: true }) as Project[];
 
-}
+    let rows = 1;
 
-const Projects: React.FC<ProjectsProps> = () => {
-    const projects = i18.t("landing.projects.slider", { returnObjects: true }) as Project[];
-
+    if (projects.length >= 6) {
+        rows = 2;
+    }
+    
     const sliderSettings = {
-        dots: true,
-        arrows: false,
+        dots: false,
+        arrows: true,
         infinite: false,
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 3,
+        rows: rows,
         responsive: [
             {
                 breakpoint: 1200,
@@ -46,25 +52,14 @@ const Projects: React.FC<ProjectsProps> = () => {
             }
         ]
     };
-
-
     return (
-        <section className="projects">
-            <div className="flex">
-                <div className="flex">
-                    <h2 className="projects__title title" dangerouslySetInnerHTML={{__html: i18.t("landing.projects.title")}}></h2>
-                    <div className="accent-line"></div>
-                </div>
-
-                <Link to={"/projects"} className="projects__link">{ i18.t("landing.projects.link") }</Link>
-            </div>
-
+        <section className="small-projects">
+            <h2 className="small-projects__title" dangerouslySetInnerHTML={{ __html: i18.t("projects.small-projects.title") }}></h2>
 
             <Slider className="projects__slider slider" {...sliderSettings}>
                 {projects.map((project, index) => (
                     <div key={index}>
                         <div className="projects__project slider-slide">
-                            <img src={project.src} alt="" className="projects__project-preview" />
                             <div className="projects__project-stack">
                                 { project.stack }
                             </div>
@@ -85,9 +80,8 @@ const Projects: React.FC<ProjectsProps> = () => {
                     </div>
                 ))}
             </Slider>
-
         </section>
     );
 };
 
-export default Projects;
+export default SmallProjects;

@@ -133,6 +133,75 @@
             "media": "Соц.сети",
             "copyright": "© Copyright 2024. Сделано Исмаилом<br/> <a href='https://www.figma.com/@elias_dev' target='_blank' class='accent'>Спасибо Элиасу за вдохновение в дизайне</a>"
         }
-    }
-    
+    },
+
+    "projects": {
+            "title": "<span class='accent'>/</span>проекты",
+            "subtitle": "Проекты, в которых я участвовал и разрабатывал.",
+            
+            "big-projects": {
+                "title": "<span class='accent'>#</span>серьезные проекты",
+                "slider": [
+                    {
+                        "src": "/assets/img/projects/inversoai.png",
+                        "stack": "React TS Python PostgreSQL Framer",
+                        "title": "Inverso AI",
+                        "description": "Доступ к анализу криптовалют в реальном времени через интерфейс AI-чата.",
+                        "link": "Посмотреть ~~>",
+                        "href": "https://inverso.ai"
+                    },
+                    {
+                        "src": "/assets/img/projects/danesh.png",
+                        "stack": "HTML CSS Python Flask",
+                        "title": "Danesh",
+                        "description": "Сервис для обучения студентов с помощью AI-чат-бота.",
+                        "link": "Посмотреть ~~>",
+                        "href": "https://danesh.io"
+                    },
+                    {
+                        "src": "/assets/img/projects/krsynergy.png",
+                        "stack": "Gulp SCSS PHP JS",
+                        "title": "Лендинг университета",
+                        "description": "Лендинг для Университета Синергия.",
+                        "link": "Посмотреть ~~>",
+                        "href": "https://kr.synergy.ru"
+                    },
+                    {
+                        "src": "/assets/img/projects/minecraft.png",
+                        "stack": "Gulp SCSS JS HTML",
+                        "title": "Лендинг сервера Minecraft",
+                        "description": "Лендинг для сервера Minecraft.",
+                        "link": "Посмотреть ~~>",
+                        "href": "https://iismoilov7.github.io/minecraft-server-landing/build/"
+                    }
+                ]
+            },
+
+            "small-projects": {
+                "title": "<span class='accent'>#</span>малые проекты",
+                "slider": [
+                    {
+                        "stack": "Python Selenium BeautifulSoup4",
+                        "title": "Автоматический решатель тестов Online Testpad",
+                        "description": "Это скрипт для автоматического решения тестов на onlinetestpad.com",
+                        "link": "Github ~~>",
+                        "href": "https://github.com/iismoilov7/test-solver"
+                    },
+                    {
+                        "stack": "JS",
+                        "title": "YaBlocker",
+                        "description": "YaBlocker — это легкое расширение для Chrome, предназначенное для удаления рекламы из поиска Яндекса.",
+                        "link": "Github ~~>",
+                        "href": "https://github.com/iismoilov7/yablocker"
+                    },
+                    {
+                        "stack": "PHP HTML CSS",
+                        "title": "PHP Shell Script",
+                        "description": "Этот PHP-скрипт предоставляет веб-интерфейс оболочки, который позволяет пользователям выполнять различные операции с файлами и выполнять команды оболочки на сервере.",
+                        "link": "Github ~~>",
+                        "href": "https://github.com/iismoilov7/yablocker"
+                    }
+                ]
+            }
+        }
 }
