@@ -20,7 +20,8 @@
         &__burger {
             margin-left: 10px;
             display: block;
-            cursor: pointer;
+            cursor: url("/src//assets/img/common/cursor-pointer.png"), pointer;
+;
             width: 24px;
             height: 24px;
             position: relative;
