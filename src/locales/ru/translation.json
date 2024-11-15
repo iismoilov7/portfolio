@@ -199,7 +199,7 @@
                         "title": "PHP Shell Script",
                         "description": "Этот PHP-скрипт предоставляет веб-интерфейс оболочки, который позволяет пользователям выполнять различные операции с файлами и выполнять команды оболочки на сервере.",
                         "link": "Github ~~>",
-                        "href": "https://github.com/iismoilov7/yablocker"
+                        "href": "https://github.com/iismoilov7/php-shell"
                     }
                 ]
             }

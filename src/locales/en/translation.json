@@ -193,7 +193,7 @@
                     "title": "PHP Shell Script",
                     "description": "This PHP script provides a web-based shell interface that allows users to perform various file operations and execute shell commands on the server.",
                     "link": "Github ~~>",
-                    "href": "https://github.com/iismoilov7/yablocker"
+                    "href": "https://github.com/iismoilov7/php-shell"
                 }
             ]
         }
