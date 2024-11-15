@@ -20,16 +20,17 @@ const About: React.FC<AboutProps> = () => {
                 <div className="flex-col">
                     <div className="about__description flex-col">
                         {
-                            description.map((value) => (
-                                <p>{value}</p>
+                            description.map((value, index) => (
+                                <p key={index}>{value}</p>
                             ))
                         }
                     </div>
 
                     <Link to={""} className="about__btn btn">{ i18.t("landing.about.button") }</Link>
                 </div>
-                
-                <img className="about__image" src="/assets/img/about/me.png" alt="Ismoil" />
+                <div className="about__image">
+                    <img src="/assets/img/about/me.jpg" alt="Ismoil" />
+                </div>
             </div>
 
         </section>

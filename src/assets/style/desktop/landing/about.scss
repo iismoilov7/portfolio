@@ -20,9 +20,24 @@
     &__image {
         max-width: 337px;
         border-bottom: 2px solid $primary;
-        filter: blur(5px);
+        position: relative;
+
         &:hover {
             filter: unset;
+            &::before {
+                backdrop-filter: unset;
+            }
+        }
+
+        &::before {
+            content: "";
+            transition: 0.3s all;
+            position: absolute;
+            right: 60px;
+            top: 128px;
+            width: 100px;
+            height: 100px;
+            backdrop-filter: blur(5px);
         }
     }
 

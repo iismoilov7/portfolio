@@ -17,7 +17,18 @@
             right: 0;
             bottom: 0;
             z-index: 1;
+            filter: blur(1px);
+
+            &:hover {
+                filter: unset;
+            }
+
+            &::before {
+                display: none;
+            }
         }
+
+        
     }
 }
 

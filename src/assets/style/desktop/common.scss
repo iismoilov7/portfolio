@@ -75,8 +75,8 @@ img {
 
     &__line {
         background-color: $white;
-        width: 1px;
-        height: 100px;
+        width: 2px;
+        height: 150px;
     }
 
     &__links {
@@ -181,10 +181,10 @@ img {
         content: "";
         position: absolute;
         top: 0;
-        left: -24px;
-        width: 16px;
-        height: 16px;
-        background: url("/assets/img/logo.png") no-repeat center center / contain;
+        left: -40px;
+        width: 45px;
+        height: 21px;
+        background: url("/src/assets/img/common/logo.png") no-repeat center center / contain;
     }
 }
 

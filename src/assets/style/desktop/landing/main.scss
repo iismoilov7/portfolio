@@ -44,5 +44,24 @@
         width: 100%;
         max-width: 394px;
         margin: 0 auto;
+
+        &-icon {
+            fill: #483b55;
+            stroke: #C778DD;
+            animation: pulseIcon 3s infinite ease;
+        }
+    }
+}
+
+
+@keyframes pulseIcon {
+    0% {
+        fill: #483b55;
+    }
+    50% {
+        fill: #C778DD;
+    }
+    100% {
+        fill: #483b55;
     }
 }

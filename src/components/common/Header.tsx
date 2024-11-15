@@ -51,31 +51,33 @@ const Header: React.FC<HeaderProps> = ({ navLinks }) => {
     };
 
     const handleClick = async () => {
-        if (isOpen) {
-            if (headerTag.current && navTag.current) {
-                headerTag.current.style.height = "0%";
-                await animate(navTag.current, {
-                    animation: "animate__fadeOut",
-                    is_show: true,
-                });
-                headerTag.current.classList.remove("active");
-                setTimeout(() => {
-                    if (headerTag.current) {
-                        headerTag.current.style.removeProperty("height");
-                    }
-                }, 300);
-            };
-            
-            setOpen(false);
-        } else {
-            if (headerTag.current && navTag.current) {
-                await animate(headerTag.current, {
-                    animation: "animate__fadeIn",
-                    is_show: true,
-                    className: "active"
-                });
+        if (window.innerWidth <= 992) {
+            if (isOpen) {
+                if (headerTag.current && navTag.current) {
+                    headerTag.current.style.height = "0%";
+                    await animate(navTag.current, {
+                        animation: "animate__fadeOut",
+                        is_show: true,
+                    });
+                    headerTag.current.classList.remove("active");
+                    setTimeout(() => {
+                        if (headerTag.current) {
+                            headerTag.current.style.removeProperty("height");
+                        }
+                    }, 300);
+                };
+                
+                setOpen(false);
+            } else {
+                if (headerTag.current && navTag.current) {
+                    await animate(headerTag.current, {
+                        animation: "animate__fadeIn",
+                        is_show: true,
+                        className: "active"
+                    });
+                }
+                setOpen(true);
             }
-            setOpen(true);
         }
     }
 
