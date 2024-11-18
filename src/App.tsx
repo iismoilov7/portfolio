@@ -1,4 +1,4 @@
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter, useLocation } from "react-router-dom";
 import Landing from "@src/pages/Landing";
 import BaseLayout from "@src/layouts/BaseLayout";
 import { useEffect, useState } from "react";
@@ -6,7 +6,13 @@ import { i18 } from "./hooks/languages";
 import NotFound from "./components/common/NotFound";
 import Projects from "./pages/Projects";
 
-const RouterRoutes = () => (
+const RouterRoutes = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [pathname]);
+  return (
   <Routes>
     <Route element={<BaseLayout />}>
       <Route path="/" element={<Landing />} />
@@ -16,8 +22,8 @@ const RouterRoutes = () => (
     <Route element={<BaseLayout />}>
       <Route path="*" element={<NotFound />} />
     </Route>
-  </Routes>
-);
+  </Routes>)
+};
 
 
 const App = () => {
@@ -30,6 +36,9 @@ const App = () => {
       setHeartStatus(" 💔");
     }
   };
+
+
+  
 
   useEffect(() => {
     document.addEventListener('visibilitychange', handleVisibilityChange);
