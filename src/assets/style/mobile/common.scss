@@ -15,6 +15,13 @@
 }
 
 @include _768 {
+    .accent-line {
+        max-width: 100% !important;
+    }
+
+    .batman {
+        height: 200px;
+    }
 }
 
 

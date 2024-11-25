@@ -1,5 +1,4 @@
 // Imports
-@use 'sass:math';
 @import 'assets/style/vars.scss';
 @import 'assets/style/mixins.scss';
 @import 'assets/style/mobile/common.scss';
@@ -17,3 +16,8 @@
 // Projects
 @import 'assets/style/mobile/projects/big.scss';
 @import 'assets/style/mobile/projects/small.scss';
+
+
+// About
+@import 'assets/style/mobile/about/me.scss';
+@import 'assets/style/mobile/about/facts.scss';

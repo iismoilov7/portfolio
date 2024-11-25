@@ -109,15 +109,16 @@
         "about": {
             "title": "<span class='accent'>#</span>about-me",
             "description": [
-                "Hello, I'm Ismoil!",
-                "I am a self-taught programmer from Tajikistan, Chkalovsk. Currently I live in Moscow. I can provide a turnkey service, platform or software.",
-                "Transforming my creativity and knowledge into a websites has been my passion for over a year. I have been helping various clients to establish their presence online. I always strive to learn about the newest technologies and frameworks."
+                "Hello, I am Ismail!",
+                "I am a self-taught programmer from Tajikistan. Currently, I live in Moscow and work at Synergy.",
+                "I am in my third year studying programming. I am working on one startup and on my blog.",
+                "I always strive to learn about the latest technologies and frameworks."
             ],
             "button": "Read more ->"
         },
         "contacts": {
             "title": "<span class='accent'>#</span>contacts",
-            "description": "I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me",
+            "description": "Write to me, I will help you with your development!",
             "msgme": "Message me here",
             "telegram": "iismoilov7",
             "email": "ismoil@inverso.ai"
@@ -195,6 +196,34 @@
                     "link": "Github ~~>",
                     "href": "https://github.com/iismoilov7/php-shell"
                 }
+            ]
+        }
+    },
+
+    "about": {
+        "title": "<span class='accent'>/</span>about-me",
+        "subtitle": "Who am I?",
+        "me": {
+            "description": [
+                "Hello, I am Ismail!",
+                "I am a self-taught programmer from Tajikistan. Currently, I live in Moscow and work at Synergy.",
+                "I am in my third year studying programming. I am working on one startup and on my blog.",
+                "I dedicated 5 years to martial arts (MMA, Muay Thai) and 2 years to football.",
+                "I am interested in ethical hacking.",
+                "I play FIFA and CS2.",
+                "I always strive to learn about the latest technologies and frameworks."
+            ]
+        },
+        "facts": {
+            "title": "<span class='accent'>#</span>my-fun-facts",
+            "facts_list": [
+                "I like meat",
+                "My favorite movie is The Gentlemen",
+                "I am a student",
+                "I study IT for 6 years",
+                "My favorite color is green and purple",
+                "I am Real Madrid fan",
+                "I go to the gym and Thai Boxing"
             ]
         }
     }

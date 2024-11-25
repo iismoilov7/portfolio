@@ -1,0 +1,20 @@
+.facts {
+    margin-top: 112px;
+
+    &__list {
+        margin-top: 43px;
+        max-width: 670px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        &-item {
+            padding: 8px;
+            border: 1px solid $gray;
+        }
+    }
+
+    &__container {
+        justify-content: space-between;
+    }
+}

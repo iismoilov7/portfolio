@@ -1,7 +1,7 @@
 import Main from "@src/components/landing/Main";
 import Quote from "@src/components/landing/Quote";
 import Projects from "@src/components/landing/Projects";
-import Skills from "@src/components/landing/Skills";
+import Skills from "@src/components/common/Skills";
 import React from "react";
 import About from "@src/components/landing/About";
 import Contacts from "@src/components/landing/Contacts";
@@ -9,11 +9,11 @@ import { email, telegram } from "@src/config";
 
 const Landing: React.FC = () => {
     return (
-        <div className="page-landing">
+        <div className="page-landing fade-in">
             <Main />
             <Quote />
             <Projects />
-            <Skills />
+            <Skills showfull={false} />
             <About />
             <Contacts email={email} telegram={telegram} />
         </div>

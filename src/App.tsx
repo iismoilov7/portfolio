@@ -2,9 +2,10 @@ import { Routes, Route, BrowserRouter, useLocation } from "react-router-dom";
 import Landing from "@src/pages/Landing";
 import BaseLayout from "@src/layouts/BaseLayout";
 import { useEffect, useState } from "react";
-import { i18 } from "./hooks/languages";
-import NotFound from "./components/common/NotFound";
-import Projects from "./pages/Projects";
+import { i18 } from "@src/hooks/languages";
+import NotFound from "@src/components/common/NotFound";
+import Projects from "@src/pages/Projects";
+import About from "@src/pages/About";
 
 const RouterRoutes = () => {
   const { pathname } = useLocation();
@@ -17,6 +18,7 @@ const RouterRoutes = () => {
     <Route element={<BaseLayout />}>
       <Route path="/" element={<Landing />} />
       <Route path="/projects" element={<Projects />} />
+      <Route path="/about" element={<About />} />
     </Route>
 
     <Route element={<BaseLayout />}>

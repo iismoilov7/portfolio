@@ -15,7 +15,7 @@ interface ProjectsProps {
 const Projects: React.FC<ProjectsProps> = () => {
 
     return (
-        <div className="page-projects">
+        <div className="page-projects fade-in">
             <h2 className="page-projects__title title" dangerouslySetInnerHTML={{ __html: i18.t("projects.title") }}></h2>
             <h4 className="page-projects__subtitle subtitle">{ i18.t("projects.subtitle") }</h4>
 

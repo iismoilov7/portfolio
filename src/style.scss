@@ -1,5 +1,8 @@
 // Imports
 @use 'sass:math';
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
 @import 'assets/style/vars.scss';
 @import 'assets/style/mixins.scss';
 @import 'assets/style/desktop/common.scss';
@@ -17,3 +20,7 @@
 // Projects
 @import 'assets/style/desktop/projects/big.scss';
 @import 'assets/style/desktop/projects/small.scss';
+
+// About
+@import 'assets/style/desktop/about/me.scss';
+@import 'assets/style/desktop/about/facts.scss';

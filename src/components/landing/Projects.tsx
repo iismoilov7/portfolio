@@ -2,8 +2,6 @@ import React from "react";
 import { i18 } from "@src/hooks/languages";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 interface Project {
     src: string;
