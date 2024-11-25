@@ -8,7 +8,7 @@ interface BatmanProps {
 
 const Model: React.FC = () => {
   const group = useRef();
-  const glf = useGLTF("src/assets/files/batman/scene.gltf");
+  const glf = useGLTF("/assets/files/batman/scene.gltf");
   const { actions } = useAnimations(glf.animations, group);
 
   useEffect(() => {
