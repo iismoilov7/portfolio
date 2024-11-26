@@ -236,7 +236,17 @@
         "title": "<span class='accent'>/</span>контакты",
         "subtitle": "Связь со мной",
         "support": {
-            "description": "I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me"
+            "description": "Напишите мне, я помогу вам с вашим развитием!",
+            "wallets": {
+                "title": "Поддержите меня здесь",
+                "btc": "BTC 1MiVopejnh2tr3L9SaNCLY82xKwZhRBd8d",
+                "eth": "ERC-20 0xb03e76e023a2a0d18f466b11e2a61a2135cd5e53",
+                "usdt": "TRC-20 TDHUxMe1zESxySn31mNsSv1HBovDrT1xPx"
+            },
+            "social": {
+                "title": "Напишите мне здесь"
+            }
         }
     }
+
 }

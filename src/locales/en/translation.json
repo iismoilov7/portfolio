@@ -236,9 +236,9 @@
             "description": "Write to me, I will help you with your development!",
             "wallets": {
                 "title": "Support me here",
-                "btc": "bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh",
-                "eth": "bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh",
-                "usdt": "bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh"
+                "btc": "BTC 1MiVopejnh2tr3L9SaNCLY82xKwZhRBd8d",
+                "eth": "ERC-20 0xb03e76e023a2a0d18f466b11e2a61a2135cd5e53",
+                "usdt": "TRC-20 TDHUxMe1zESxySn31mNsSv1HBovDrT1xPx"
             },
 
             "social": {

@@ -26,7 +26,7 @@ const About: React.FC<AboutProps> = () => {
                         }
                     </div>
 
-                    <Link to={""} className="about__btn btn">{ i18.t("landing.about.button") }</Link>
+                    <Link to={"/about"} className="about__btn btn">{ i18.t("landing.about.button") }</Link>
                 </div>
                 <div className="about__image">
                     <img src="/assets/img/about/me.jpg" alt="Ismoil" />
