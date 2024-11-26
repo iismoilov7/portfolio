@@ -1,7 +1,8 @@
 
-export const email = "ismoil@inverso.ai";
-export const telegram = "https://t.me/iismoilov7";
-export const github = "https://github.com/iismoilov7";
+export const email = "ismoil@ismoil.site";
+export const telegram = "iismoilov7";
+export const github = "iismoilov7";
+export const instagram = "iismoilov7";
 
 
 export const SocialLinks = [

@@ -5,7 +5,7 @@ import Skills from "@src/components/common/Skills";
 import React from "react";
 import About from "@src/components/landing/About";
 import Contacts from "@src/components/landing/Contacts";
-import { email, telegram } from "@src/config";
+
 
 const Landing: React.FC = () => {
     return (
@@ -15,7 +15,7 @@ const Landing: React.FC = () => {
             <Projects />
             <Skills showfull={false} />
             <About />
-            <Contacts email={email} telegram={telegram} />
+            <Contacts />
         </div>
     )
 }

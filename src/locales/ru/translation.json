@@ -125,9 +125,7 @@
         "contacts": {
             "title": "<span class='accent'>#</span>контакты",
             "description": "Напишите мне, я помогу вам с вашей разработкой!",
-            "msgme": "Напишите мне сюда",
-            "telegram": "iismoilov7",
-            "email": "ismoil@inverso.ai"
+            "msgme": "Напишите мне сюда"
         },
         "footer": {
             "description": "Full-Stack разработчик и специалист по Python LLM",
@@ -231,6 +229,14 @@
                 "Я фанат Реал Мадрид",
                 "Я хожу в спортзал и занимаюсь тайским боксом"
             ]
+        }
+    },
+
+    "contacts": {
+        "title": "<span class='accent'>/</span>контакты",
+        "subtitle": "Связь со мной",
+        "support": {
+            "description": "I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me"
         }
     }
 }

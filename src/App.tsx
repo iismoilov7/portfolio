@@ -6,6 +6,7 @@ import { i18 } from "@src/hooks/languages";
 import NotFound from "@src/components/common/NotFound";
 import Projects from "@src/pages/Projects";
 import About from "@src/pages/About";
+import Contacts from "@src/pages/Contacts";
 
 const RouterRoutes = () => {
   const { pathname } = useLocation();
@@ -19,6 +20,7 @@ const RouterRoutes = () => {
       <Route path="/" element={<Landing />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/about" element={<About />} />
+      <Route path="/contacts" element={<Contacts />} />
     </Route>
 
     <Route element={<BaseLayout />}>

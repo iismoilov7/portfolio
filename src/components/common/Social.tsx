@@ -1,18 +1,10 @@
-import React from "react";
+import { SocialLinks } from "@src/config";
 import { Link } from "react-router-dom";
+import React from "react";
 
 
-export interface SocialLink {
-    id: number;
-    href: string;
-    icon: string;
-};
 
-export interface SocialProps {
-    SocialLinks: SocialLink[];
-}
-
-const Social: React.FC<SocialProps> = ({ SocialLinks }) => {
+const Social: React.FC = () => {
     return (
         <div className="social-fixed animate__animated animate__slideInDown">
             <div className="social-fixed__line"></div>

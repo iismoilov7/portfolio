@@ -4,7 +4,6 @@ import { i18 } from "@src/hooks/languages";
 import Header from "@src/components/common/Header";
 import Social from "@src/components/common/Social";
 import Footer from "@src/components/common/Footer";
-import { email, SocialLinks } from "@src/config";
 
 const navLinks = [
     {
@@ -40,12 +39,12 @@ const navLinks = [
 const BaseLayout: React.FC = () => {
     return (
         <>
-            <Social SocialLinks={SocialLinks} />
+            <Social />
             <Header navLinks={navLinks} />
             <div className="base_layout">
                 <Outlet />
             </div>
-            <Footer SocialLinks={SocialLinks} email={email} />
+            <Footer />
         </>
 
     );

@@ -1,16 +1,10 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { SocialLink } from "@src/components/common/Social";
 import { i18 } from "@src/hooks/languages";
 import animate from "@src/utils/animation";
+import { email, SocialLinks } from "@src/config";
 
-interface FooterProps {
-    SocialLinks: SocialLink[];
-    email: string;
-}
-
-
-const Footer: React.FC<FooterProps> = ({ SocialLinks, email }) => {
+const Footer: React.FC = () => {
     
     // Remove loading animation once DOM loaded
     useEffect(() => {

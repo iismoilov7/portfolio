@@ -15,16 +15,17 @@ const Me: React.FC<MeProps> = () => {
     const [fade, setFade] = useState(false);
 
     useEffect(() => {
+        
         const interval = setInterval(() => {
-            setFade(false); // Убираем класс fade перед сменой изображения
+            setFade(false);
             setTimeout(() => {
                 setCurrentIndex((prevIndex) => (prevIndex === 0 ? 1 : 0));
-                setFade(true); // Добавляем класс fade после смены изображения
-            }, 100); // Небольшая задержка для плавного перехода
-        }, 5000); // Смена изображения каждые 5 секунд
+                setFade(true);
+            }, 100);
+        }, 5000);
 
-        return () => clearInterval(interval); // Очистка интервала при размонтировании
-    }, []); // Пустой массив зависимостей, чтобы эффект сработал только один раз
+        return () => clearInterval(interval);
+    }, []);
 
     return (
         <section className="me flex">

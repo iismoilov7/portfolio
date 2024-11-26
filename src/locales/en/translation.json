@@ -1,6 +1,8 @@
 {
     "name": "Ismoil",
 
+
+
     "common": {
         "nav": {
             "home": "home",
@@ -119,9 +121,7 @@
         "contacts": {
             "title": "<span class='accent'>#</span>contacts",
             "description": "Write to me, I will help you with your development!",
-            "msgme": "Message me here",
-            "telegram": "iismoilov7",
-            "email": "ismoil@inverso.ai"
+            "msgme": "Message me here"
         },
         "footer": {
             "description": "Full-Stack Developer & Python LLM Specialist",
@@ -225,6 +225,25 @@
                 "I am Real Madrid fan",
                 "I go to the gym and Thai Boxing"
             ]
+        }
+    },
+
+
+    "contacts": {
+        "title": "<span class='accent'>/</span>contacts",
+        "subtitle": "Connection with me",
+        "support": {
+            "description": "Write to me, I will help you with your development!",
+            "wallets": {
+                "title": "Support me here",
+                "btc": "bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh",
+                "eth": "bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh",
+                "usdt": "bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh"
+            },
+
+            "social": {
+                "title": "Message me here"
+            }
         }
     }
 }
