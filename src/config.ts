@@ -8,12 +8,12 @@ export const instagram = "iismoilov7";
 export const SocialLinks = [
     {
         id: 0,
-        href: github,
+        href: "https://github.com/" + github,
         icon: "/assets/img/common/github.png"
     },
     {
         id: 1,
-        href: telegram,
+        href: "https://t.me/" + telegram,
         icon: "/assets/img/common/telegram.png"
     }
 ];

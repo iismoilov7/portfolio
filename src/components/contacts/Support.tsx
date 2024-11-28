@@ -23,7 +23,7 @@ const Support: React.FC = () => {
                     <div className="support__social">
                         <div className="support__social-title">{ i18.t("contacts.support.social.title") }</div>
 
-                        <Link to={telegram} target="_blank" className="support__social-link flex">
+                        <Link to={`https://t.me/${telegram}`} target="_blank" className="support__social-link flex">
                             <img src="/assets/img/common/telegram.png" alt="Telegram icon" className="icon" />
                             <div>{ telegram }</div>
                         </Link>

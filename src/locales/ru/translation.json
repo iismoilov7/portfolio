@@ -34,30 +34,6 @@
             "link": "Посмотреть все ~~>",
             "slider": [
                 {
-                    "src": "/assets/img/projects/inversoai.png",
-                    "stack": "React TS Python PostgreSQL Framer",
-                    "title": "Inverso AI",
-                    "description": "Получите доступ к анализу криптовалюты через AI-чат-интерфейс.",
-                    "link": "Посмотреть ~~>",
-                    "href": "https://inverso.ai"
-                },
-                {
-                    "src": "/assets/img/projects/danesh.png",
-                    "stack": "HTML CSS Python Flask",
-                    "title": "Danesh",
-                    "description": "Сервис по обучение студентов через AI чат бот",
-                    "link": "Посмотреть ~~>",
-                    "href": "https://danesh.io"
-                },
-                {
-                    "src": "/assets/img/projects/krsynergy.png",
-                    "stack": "Gulp SCSS PHP JS",
-                    "title": "Кадровый Резерв Лендинг",
-                    "description": "Лендинг страницы университета Синергия",
-                    "link": "Посмотреть ~~>",
-                    "href": "https://kr.synergy.ru"
-                },
-                {
                     "src": "/assets/img/projects/minecraft.png",
                     "stack": "Gulp SCSS JS HTML",
                     "title": "Лендинг Майнкрафт Сервера",
@@ -141,30 +117,6 @@
             "big-projects": {
                 "title": "<span class='accent'>#</span>серьезные проекты",
                 "slider": [
-                    {
-                        "src": "/assets/img/projects/inversoai.png",
-                        "stack": "React TS Python PostgreSQL Framer",
-                        "title": "Inverso AI",
-                        "description": "Доступ к анализу криптовалют в реальном времени через интерфейс AI-чата.",
-                        "link": "Посмотреть ~~>",
-                        "href": "https://inverso.ai"
-                    },
-                    {
-                        "src": "/assets/img/projects/danesh.png",
-                        "stack": "HTML CSS Python Flask",
-                        "title": "Danesh",
-                        "description": "Сервис для обучения студентов с помощью AI-чат-бота.",
-                        "link": "Посмотреть ~~>",
-                        "href": "https://danesh.io"
-                    },
-                    {
-                        "src": "/assets/img/projects/krsynergy.png",
-                        "stack": "Gulp SCSS PHP JS",
-                        "title": "Лендинг университета",
-                        "description": "Лендинг для Университета Синергия.",
-                        "link": "Посмотреть ~~>",
-                        "href": "https://kr.synergy.ru"
-                    },
                     {
                         "src": "/assets/img/projects/minecraft.png",
                         "stack": "Gulp SCSS JS HTML",
