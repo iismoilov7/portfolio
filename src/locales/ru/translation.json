@@ -18,7 +18,7 @@
 
     "landing": {
         "main": {
-            "title": "Исмаил — <span class='accent'>full-stack</span> разработчик<br /> и <span class='accent'>Python</span> LLM специалист",
+            "title": "Исмаил — <span class='accent'>full-stack</span> разработчик<br /> и <span class='accent'>Python</span> Инженер",
             "subtitle": "Разрабатываю, боксирую и играю",
             "button": "Напиши мне !!",
             "status": {
@@ -128,7 +128,7 @@
             "msgme": "Напишите мне сюда"
         },
         "footer": {
-            "description": "Full-Stack разработчик и специалист по Python LLM",
+            "description": "Full-Stack разработчик и специалист по Python Engineer",
             "media": "Соц.сети",
             "copyright": "© Copyright 2024. Сделано Исмаилом<br/> <a href='https://www.figma.com/@elias_dev' target='_blank' class='accent'>Спасибо Элиасу за вдохновение в дизайне</a>"
         }

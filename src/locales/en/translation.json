@@ -21,7 +21,7 @@
 
     "landing": {
         "main": {
-            "title": "Ismoil is a <span class='accent'>full-stack</span> developer<br /> and <span class='accent'>Python</span> LLM Specialist",
+            "title": "Ismoil is a <span class='accent'>full-stack</span> developer<br /> and <span class='accent'>Python</span> Engineer",
             "subtitle": "I develop, box, and play.",
             "button": "Contact me !!",
             "status": {
@@ -124,7 +124,7 @@
             "msgme": "Message me here"
         },
         "footer": {
-            "description": "Full-Stack Developer & Python LLM Specialist",
+            "description": "Full-Stack Developer & Python Engineer",
             "media": "Media",
             "copyright": "© Copyright 2024. Made by Ismoil<br/> <a href='https://www.figma.com/@elias_dev' target='_blank' class='accent'>Thx to Elias for design inspiration</a>"
         }
