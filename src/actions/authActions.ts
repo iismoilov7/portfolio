@@ -39,9 +39,10 @@ export const logout = (): AuthAction => ({
 export const loginUser = (credentials: LoginRequest ): ThunkAction<void, RootState, unknown, AnyAction> => {
   return async (dispatch: AppDispatch) => {
     dispatch(loginRequest());
+    
     try {
       const response = await apiServer.post(
-        EndPoints.auth.login, 
+        EndPoints.auth.login,
         credentials,
         {
           withCredentials: true

@@ -1,3 +1,5 @@
+import { FrontendURL } from "@src/config";
+
 export const getCookie = (name: string): string | undefined => {
     const value = `; ${document.cookie}`;
     const parts = value.split(`; ${name}=`);
@@ -21,5 +23,5 @@ export const setCookie = (name: string, value: string, days: number) => {
         expires = "; expires=" + date.toUTCString();
     }
     
-    document.cookie = name + "=" + (value || "") + expires + `; path=/; domain=${import.meta.env.VITE_FRONTEND_URL}`;
+    document.cookie = name + "=" + (value || "") + expires + `; path=/; domain=${FrontendURL}`;
 }

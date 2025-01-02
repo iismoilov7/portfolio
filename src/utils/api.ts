@@ -1,8 +1,7 @@
+import { BackendURL } from "@src/config";
 import axios from "axios";
 
-export const apiUri: string = import.meta.env.VITE_BACKEND_URL;
-
 export const apiServer = axios.create({
-  baseURL: apiUri,
+  baseURL: BackendURL,
   timeout: 10000
 });

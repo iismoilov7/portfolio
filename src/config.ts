@@ -28,3 +28,8 @@ export const EndPoints = {
         create_article: "/blog/article/create"
     }
 }
+
+
+
+export const BackendURL = import.meta.env.VITE_BACKEND_URL.replace(/[";]/g, '');
+export const FrontendURL = import.meta.env.VITE_FRONTEND_URL.replace(/[";]/g, '');
