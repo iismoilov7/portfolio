@@ -14,6 +14,7 @@ import {
 import { EndPoints } from "@src/config";
 import { apiServer } from "@src/utils/api";
 import { AuthAction } from "@src/reducers/auth";
+import { setCookie } from "@src/utils/cookie";
 
 export const loginRequest = (): AuthAction => ({
   type: LOGIN_REQUEST,
@@ -33,6 +34,8 @@ export const logout = (): AuthAction => ({
     type: LOGOUT
 });
 
+
+
 export const loginUser = (credentials: LoginRequest ): ThunkAction<void, RootState, unknown, AnyAction> => {
   return async (dispatch: AppDispatch) => {
     dispatch(loginRequest());
@@ -47,6 +50,8 @@ export const loginUser = (credentials: LoginRequest ): ThunkAction<void, RootSta
       
       const userdata = response.data as LoginResponse;
       console.log(userdata);
+
+      setCookie("access_token", userdata.access_token, 7);
       // Dispatch success action on successful login
       dispatch(loginSuccess(userdata.user));
     } catch (error) {

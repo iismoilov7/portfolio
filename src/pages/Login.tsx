@@ -29,9 +29,6 @@ const Login: React.FC<LoginProps> = ({ }) => {
         dispatch({ type: RESET_LOGIN_ERROR });
         if (isAuthenticated) {
             switch (userRole) {
-                case "owner":
-                    window.location.href = apiUri + "/admin";
-                    break;
                 case "admin":
                     window.location.href = "/blog/create";
                     break;
@@ -40,7 +37,7 @@ const Login: React.FC<LoginProps> = ({ }) => {
                     break;
             }
         }
-    }, []);
+    }, [isAuthenticated]);
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
