@@ -23,5 +23,5 @@ export const setCookie = (name: string, value: string, days: number) => {
         expires = "; expires=" + date.toUTCString();
     }
     
-    document.cookie = name + "=" + (value || "") + expires + `; path=/; domain=${FrontendURL}`;
+    document.cookie = name + "=" + (value || "") + expires + `; path=/; domain=${FrontendURL.replace(/^https?:\/\//, '')}`;
 }
