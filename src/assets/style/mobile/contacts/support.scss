@@ -1,0 +1,12 @@
+@include _768 {
+    .support {
+        &__box {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        &__wallets, &__social {
+            width: 100%;
+        }
+    }
+}

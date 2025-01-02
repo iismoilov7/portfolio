@@ -1,0 +1,11 @@
+@include _480 {
+    .article {
+        max-width: 260px;
+        &__info {
+            gap: 10px;
+            &-title {
+                font-size: 20px;
+            }
+        }
+    }
+}

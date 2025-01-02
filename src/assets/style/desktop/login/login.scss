@@ -1,0 +1,140 @@
+.page-login {
+    &__form {
+        &.fullscreen {
+           position: fixed;
+           z-index: 9999;
+           left: 0;
+           top: 0;
+           width: 100%;
+           max-width: 100%; 
+           height: 100vh;
+           margin: 0;
+           backdrop-filter: blur(5px);
+        }
+
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding: 20px;
+        padding-top: 60px;
+        max-width: 700px;
+        width: 100%;
+        background: rgba(0,0,0, 0.6);
+        box-shadow: 4px 4px 4px rgba(0,0,0, 0.25);
+        
+
+        &-topbar {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            background-color: #1e1f29;
+            padding: 10px;
+
+            &-title {
+                font-weight: 600;
+            }
+
+            &-tools {
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                .yellow, .green, .red {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    position: relative;
+
+                    &::before {
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        color: #1e1f29;
+                        font-size: 9px;
+                        font-weight: 600;
+                        opacity: 0;
+                        transition: 0.3s all;
+                    }
+                }
+
+                .yellow {
+                    background-color: #f1fa8c;
+                    &::before {
+                        content: "-";
+                    }
+                    &:hover {
+                        &::before {
+                            opacity: 1;
+                        }
+                    }
+                }
+
+                .green {
+                    background-color: #50fa7b;
+                    &::before {
+                        content: "+";
+                    }
+                    &:hover {
+                        &::before {
+                            opacity: 1;
+                        }
+                    }
+                }
+
+                .red {
+                    background-color: #ff5555;
+                    &::before {
+                        content: "x";
+                    }
+                    &:hover {
+                        &::before {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        &-console {
+            white-space: pre-line;
+        }
+
+        &-input {
+            color: $primary;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            input {
+                width: 100%;
+                background: none;
+                color: $white;
+                outline: none;
+                padding: 14px 20px;
+                border: none;
+                position: relative;
+            }
+        }
+
+        &-btn {
+            border: none;
+            border-bottom: 1px solid $primary;
+            margin-left: auto;
+        }
+    }
+}

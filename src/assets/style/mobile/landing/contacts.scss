@@ -1,0 +1,13 @@
+@include _576 {
+    .contacts {
+        &__container {
+            margin-top: 20px;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &__box {
+            width: 100%;
+        }
+    }
+}

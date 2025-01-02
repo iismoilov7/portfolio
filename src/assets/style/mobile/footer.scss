@@ -1,0 +1,59 @@
+@include _1440 {
+    .footer__container {
+        padding: 0 100px;
+    }
+}
+
+@include _1024 {
+    .footer__container {
+        padding: 0 50px;
+    }
+
+}
+
+@include _768 {
+    .footer{
+
+
+        &__content {
+
+            &-item {
+                
+                &-description {
+                    max-width: 240px;
+                }
+            }
+        }
+    }
+}
+
+
+@include _480 {
+
+    .footer{
+        margin-top: 70px;
+
+        &__container {
+            padding: 0 20px;
+        }
+
+        &__content {
+            flex-direction: column;
+            
+            &-item {
+                &-title {
+                    display: none;
+                }
+                
+                &-description {
+                    max-width: 240px;
+                }
+
+                &:nth-last-child {
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+
+}
