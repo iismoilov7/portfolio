@@ -6,7 +6,6 @@ import { LoginRequest } from '@src/models/auth';
 import animate from '@src/utils/animation';
 import React, { useEffect, useRef, useState } from 'react'
 import Messages from '@src/components/common/Messages';
-import { apiUri } from '@src/utils/api';
 import { RESET_LOGIN_ERROR } from '@src/actions/actionTypes';
 
 interface LoginProps {
