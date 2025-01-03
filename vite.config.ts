@@ -9,6 +9,7 @@ export default defineConfig({
     port: 3000
   },
   server: {
+    host: 'ismoil.site',
     port: 3000
   },
   plugins: [
