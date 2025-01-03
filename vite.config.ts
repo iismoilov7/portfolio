@@ -5,6 +5,9 @@ import { viteStaticCopy } from 'vite-plugin-static-copy';
 // https://vitejs.dev/config/
 export default defineConfig({
   base: '/',
+  server: {
+    port: 3000
+  },
   plugins: [
     react(),
     viteStaticCopy({
