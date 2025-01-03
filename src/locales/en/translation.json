@@ -209,6 +209,7 @@
 
     "blog": {
         "title": "<span class='accent'>/</span>blog",
+        "description": "Here I write my articles about programming and life.",
         "subtitle": "Author's articles",
         "read": "Read",
         "errors": {

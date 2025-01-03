@@ -7,6 +7,7 @@ import { BlogResponse } from '@src/models/blog';
 import { apiServer } from '@src/utils/api';
 import { AxiosError } from 'axios';
 import React, { useEffect, useState } from 'react';
+import {Helmet} from "react-helmet";
 
 interface BlogProps {}
 
@@ -35,17 +36,22 @@ const Blog: React.FC<BlogProps> = () => {
   }, []);
 
   return (
-    <div className="page-blog fade-in mr-top-20">
-      <h2 className="page-blog__title title" dangerouslySetInnerHTML={{ __html: i18.t("blog.title") }}></h2>
-      <h4 className="page-blog__subtitle subtitle">{i18.t("blog.subtitle")}</h4>
-      <div className="page-blog-container flex mr-top-20">
-        {loading && <Loading />}
-        {error && <Messages message={error} status="error" />}
-        {articles.map((article) => (
-          <BlogArticle key={article.id} {...article} /> // Ensure to provide a unique key
-        ))}
+    <>
+    <Helmet>
+      <meta name="description" content={i18.t("blog.description")} />
+    </Helmet>
+      <div className="page-blog fade-in mr-top-20">
+        <h2 className="page-blog__title title" dangerouslySetInnerHTML={{ __html: i18.t("blog.title") }}></h2>
+        <h4 className="page-blog__subtitle subtitle">{i18.t("blog.subtitle")}</h4>
+        <div className="page-blog-container flex mr-top-20">
+          {loading && <Loading />}
+          {error && <Messages message={error} status="error" />}
+          {articles.map((article) => (
+            <BlogArticle key={article.id} {...article} /> // Ensure to provide a unique key
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

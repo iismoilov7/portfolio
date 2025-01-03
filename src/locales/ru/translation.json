@@ -204,6 +204,7 @@
     "blog": {
         "title": "<span class='accent'>/</span>блог",
         "subtitle": "Авторские статьи",
+        "description": "Здесь я пишу свои статьи о программировании и жизни.",
         "read": "Читать",
         "errors": {
             "notfound": "Пока что нет статьей"
