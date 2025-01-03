@@ -9,12 +9,7 @@ export default defineConfig({
     port: 3000
   },
   server: {
-    host: '0.0.0.0', // Allow access from any IP address
     port: 3000, // Your desired port
-    hmr: {
-      host: 'ismoil.site', // Replace with your domain
-      protocol: 'wss', // Use 'ws' for HTTP or 'wss' for HTTPS
-    },
   },
   plugins: [
     react(),
